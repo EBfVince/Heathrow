@@ -1,0 +1,8 @@
+# Remove Node modules
+node_modules
+
+# Remove your local database
+*.db
+
+# Keep environment variables out of version control
+.env
