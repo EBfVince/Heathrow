@@ -3,7 +3,7 @@ import { createServer } from './server'
 async function bootstrap(): Promise<void> {
   const server = await createServer()
 
-  server.listen().then(async ({ url }) => {
+  server.listen({ port: process.env.PORT || 4000 }).then(async ({ url }) => {
     console.log(`🚀 Server ready at: ${url}`)
   })
 }
