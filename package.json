@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpile-only -r dotenv/config ./src",
+    "build": "rimraf dist && tsc",
     "uid": "ts-node -r dotenv/config ./uid.ts"
   },
   "prettier": {
