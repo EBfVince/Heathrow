@@ -3,6 +3,7 @@ node_modules
 
 # Remove your local database
 *.db
+*.db-journal
 
 # Keep environment variables out of version control
 .env
