@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpile-only -r dotenv/config ./src",
     "build": "rimraf dist && tsc",
-    "start": "node -r dotenv/config dist/index.js",
+    "start": "prisma migrate deploy && node -r dotenv/config dist/index.js",
     "uid": "ts-node -r dotenv/config ./uid.ts"
   },
   "prettier": {
